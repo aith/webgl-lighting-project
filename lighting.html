@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple Sculpture - Ari</title>
+  </head>
+  <div></div>
+  <div></div>
+  <div>Living in 2020
+    <div></div> by Ari Iramanesh</div>
+  <body onload="main()">
+    <canvas id="webgl" width="450" height="450">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <script src="cuon-matrix.js"></script>
+    <script src="webgl-utils.js"></script>
+    <script src="webgl-debug.js"></script>
+    <script src="cuon-utils.js"></script>
+    <script src="lighting.js"></script>
+
+    <div>
+      <strong>Actions           :   Controls</strong>
+      <br>
+      <br>
+      Look Up/Down      :   2/X
+      <br>
+      Rotate L/R        :   Q/E
+      <br>
+      Move Forward/Back :   W/S
+      <br>
+      Move Left/Right   :   A/D
+      <br>
+  
+    </div>
+
+    <div><p>
+    </p><input class="normal"
+      type="button"
+      value="Turn OFF Normal Visualization & Lighting"
+      onclick="showNone();">
+      
+    <input class="normal"
+       type="button"
+       value="Turn ON Normal Visualization"
+       onclick="showNormals();">
+
+    <input class="normal"
+      type="button"
+      value="Turn ON Lighting"
+      onclick="showLighting();">
+
+    </p><input class="normal"
+    type="button"
+    value="Toggle Light Rotation"
+    onclick="toggleLightRotation();">
+     
+       
+    </div>
+
+
+    <h1><span id="redslider"></span></h1>
+
+  </body>
+</html>
+ 
